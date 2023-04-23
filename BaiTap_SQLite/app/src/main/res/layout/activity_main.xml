@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/cr_database"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/material_dynamic_neutral80"
+        android:text="Create Database"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete_database"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Delete Database"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_database" />
+
+    <Button
+        android:id="@+id/cr_table"
+        android:layout_width="413dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:text="Create Table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_database" />
+
+    <Button
+        android:id="@+id/delete_table"
+        android:layout_width="182dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
+        android:text="Delete Table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cr_table" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/type_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:hintEnabled="true"
+        android:hint="Type table to delete"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/material_dynamic_neutral60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/delete_table"
+        app:layout_constraintTop_toBottomOf="@+id/cr_table" />
+
+    <Button
+        android:id="@+id/insert_row"
+        android:layout_width="408dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:text="Insert Row to tbllop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_table" />
+
+    <Button
+        android:id="@+id/delete_row"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete Row From tbllop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_row" />
+
+    <Button
+        android:id="@+id/update_row"
+        android:layout_width="413dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="12dp"
+        android:text="Update Row to tbllop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_row" />
+
+    <Button
+        android:id="@+id/query_data"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:text="Querying data tbllop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_row" />
+
+    <Button
+        android:id="@+id/insert_student"
+        android:layout_width="176dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="Insert Srudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/query_data" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/type_malop"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        app:hintEnabled="true"
+        android:hint="Type malop to reference"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/material_dynamic_neutral60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/insert_student"
+        app:layout_constraintTop_toBottomOf="@+id/query_data" />
+
+    <Button
+        android:id="@+id/query_Sinhvien"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="Querying Sinhvien by malop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_student" />
+
+    <Button
+        android:id="@+id/cr_tableSinhVien"
+        android:layout_width="417dp"
+        android:layout_height="58dp"
+        android:text="Create Table Sinh Vien"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/query_Sinhvien" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
